@@ -3,7 +3,7 @@ set -e
 
 mkdir -p deps
 cd deps
-if [ ! -d "crc32c" ]; then git clone --branch 1.1.0 https://github.com/google/crc32c.git; fi
+if [ ! -d "crc32c" ]; then git clone --branch 1.1.2 https://github.com/google/crc32c.git; fi
 cd crc32c
 git submodule update --init --recursive
 mkdir -p build
